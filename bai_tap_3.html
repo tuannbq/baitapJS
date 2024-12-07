@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3</title>
+</head>
+
+
+<body>
+    <h1>Chuyển đổi tiền tệ</h1>
+    <label for="usd">Nhập số tiền USD:</label>
+    <input type="number" id="usd" name="usd"><br><br>
+    <button onclick="chuyenDoi()">Chuyển đổi</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function chuyenDoi() {
+            var usd = parseFloat(document.getElementById("usd").value);
+            var tyGia = 23500;
+            var vnd = usd * tyGia;
+            document.getElementById("ketQua").innerHTML = "Số tiền sau khi chuyển đổi là: " + vnd + " VND";
+        }
+    </script>
+</body>
+
+</html>

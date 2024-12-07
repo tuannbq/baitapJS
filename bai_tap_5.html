@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 5</title>
+</head>
+
+<body>
+    <h1>Tính tổng 2 chữ số</h1>
+    <label for="so">Nhập số có 2 chữ số:</label>
+    <input type="number" id="so" name="so"><br><br>
+    <button onclick="tinhTong()">Tính tổng</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function tinhTong() {
+            var so = parseInt(document.getElementById("so").value);
+            var chuSoHangChuc = Math.floor(so / 10);
+            var chuSoHangDonVi = so % 10;
+            var tong = chuSoHangChuc + chuSoHangDonVi;
+            document.getElementById("ketQua").innerHTML = "Tổng 2 chữ số của số có 2 chữ số là: " + tong;
+        }
+    </script>
+</body>
+
+</html>

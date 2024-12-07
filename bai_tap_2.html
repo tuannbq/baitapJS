@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2</title>
+</head>
+
+<body>
+    <h1>Tính giá trị trung bình</h1>
+    <label for="so1">Nhập số thứ 1:</label>
+    <input type="number" id="so1" name="so1"><br><br>
+    <label for="so2">Nhập số thứ 2:</label>
+    <input type="number" id="so2" name="so2"><br><br>
+    <label for="so3">Nhập số thứ 3:</label>
+    <input type="number" id="so3" name="so3"><br><br>
+    <label for="so4">Nhập số thứ 4:</label>
+    <input type="number" id="so4" name="so4"><br><br>
+    <label for="so5">Nhập số thứ 5:</label>
+    <input type="number" id="so5" name="so5"><br><br>
+    <button onclick="tinhTrungBinh()">Tính trung bình</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function tinhTrungBinh() {
+            var so1 = parseFloat(document.getElementById("so1").value);
+            var so2 = parseFloat(document.getElementById("so2").value);
+            var so3 = parseFloat(document.getElementById("so3").value);
+            var so4 = parseFloat(document.getElementById("so4").value);
+            var so5 = parseFloat(document.getElementById("so5").value);
+            var sum = so1 + so2 + so3 + so4 + so5;
+            var trungBinh = sum / 5;
+            document.getElementById("ketQua").innerHTML = "Giá trị trung bình là: " + trungBinh;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 4</title>
+</head>
+
+
+<body>
+    <h1>Tính diện tích, chu vi hình chữ nhật</h1>
+    <label for="dai">Nhập chiều dài:</label>
+    <input type="number" id="dai" name="dai"><br><br>
+    <label for="rong">Nhập chiều rộng:</label>
+    <input type="number" id="rong" name="rong"><br><br>
+    <button onclick="tinhHCN()">Tính</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function tinhHCN() {
+            var dai = parseFloat(document.getElementById("dai").value);
+            var rong = parseFloat(document.getElementById("rong").value);
+            var dienTich = dai * rong;
+            var chuVi = (dai + rong) * 2;
+            document.getElementById("ketQua").innerHTML = "Diện tích: " + dienTich + "<br>Chu vi: " + chuVi;
+        }
+    </script>
+</body>
+
+</html>

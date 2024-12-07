@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1</title>
+</head>
+
+<body>
+    <h1>Tính lương nhân viên</h1>
+    <p>Lương 1 ngày: 100 000 VNĐ.</p>
+    <label for="so_ngay_lam">Số ngày làm:</label>
+    <input type="number" id="so_ngay_lam" name="so_ngay_lam"><br><br>
+    <button onclick="tinh_luong()">Tính lương</button>
+    <p id="ket_qua"></p>
+
+    <script>
+        function tinh_luong() {
+            var ngayLam = document.getElementById("so_ngay_lam").value;
+            var luongNgay = 100000;
+            var tongLuong = ngayLam * luongNgay;
+            document.getElementById("ket_qua").innerHTML = "Tổng lương: " + tongLuong + " VNĐ.";
+        }
+    </script>
+</body>
+
+</html>
